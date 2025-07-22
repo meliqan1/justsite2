@@ -39,6 +39,12 @@
       <label>
         <button id="playBtn">ჩართე მუსიკა</button>
 <audio id="bgm" src="0722.mp3" loop preload="auto"></audio>
+<script>
+  document.getElementById('playBtn').addEventListener('click', () => {
+    const audio = document.getElementById('bgm');
+    audio.play();
+  });
+</script>
 </label>
       მიყვარხარ ( შეარჩიე ფერი):
       <input type="color" id="colorControl" value="#FF69B4">
